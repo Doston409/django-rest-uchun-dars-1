@@ -23,7 +23,7 @@ class Student (models.Model):
     name = models.CharField(max_length=255) 
     age = models.IntegerField(default=0)
     is_active = models.BooleanField(default=True)
-    adress = models.CharField(max_length=255)
+    address = models.CharField(max_length=255)
 
     def __str__(self):
         return f"{self.name} | {self.age}"
@@ -36,4 +36,14 @@ class Group(models.Model):
     is_active = models.BooleanField(default=True)
 
     def str(self):
-        return f"{self.name} | {self.teacher.name}"
+        return f"{self.name} | {self.name}"
+    
+
+    {
+"name" : "Doston",
+"universitet" : "algebra",
+"teacher" : "Ziyodullo",
+"students" : "Doston",
+"is_active" : "1",
+
+}
